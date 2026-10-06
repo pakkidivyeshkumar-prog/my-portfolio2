@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+body {
+    font-family: "Comfortaa", serif;
+    background-color:aliceblue;
+}
+
+.heading {
+    width: fit-content;
+    margin: 0px;
+    text-decoration: underline;
+}
+
+.navbar {
+    background: #dbe5f1de;
+}
+
+p {
+    margin: 0px;
+}
+
+#HeroSection {
+    width: 100%;
+    height: 70vh;
+    background: #fdd9eeb9;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heroSectionContent {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myImageCircle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.heroSectionContent p {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.focus-text {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.heroButtons {
+    background: black;
+    color: white;
+    padding: 3px 15px;
+}
+
+
+/* About me Section */
+
+#aboutMeSection {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.aboutP1,
+.aboutP2 {
+    width: 47%;
+}
+
+.aboutP1 {
+    text-align: center;
+}
+
+.aboutP1 img {
+    border-radius: 10px;
+}
+
+
+/* Skills Section */
+
+#skillsSection {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skillsDiv {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    min-height: 100px;
+}
+
+.skillsDiv .p1 {
+    width: 25%;
+    background: #F8F5E9;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.skillsDiv .p2 {
+    width: 75%;
+    font-size: 23px;
+}
+
+.skillsList {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+
+/* Project Section */
+
+#projectSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Project {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
+
+.Project .p1 {
+    width: 50%;
+    text-align: center;
+}
+
+.Project .p1 img {
+    border-radius: 10px;
+}
+
+.Project .p2 {
+    width: 50%;
+}
+
+.gitHubButton {
+    background: black;
+    color: white;
+    padding: 0px 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.demoButton {
+    background: #f19fcfb9;
+    padding: 0px 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* Contact Section */
+
+#ContactSection {
+    width: 85%;
+    margin: auto;
+    min-height: 200px;
+    border-radius: 15px;
+    background: #fdd9eeb9;
+    padding: 10px;
+}
+
+.contactDivOne {
+    background: #F44336;
+    width: 30%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contactDivTwo {
+    background: #0177B4;
+    width: 40%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contactDivOne:hover,
+.contactDivTwo:hover {
+    cursor: pointer;
+}
+
+.Contactbuttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* footer */
+footer {
+    background-color: black;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+}
+
+
+/* Mobile Version */
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+
+    #aboutMeSection {
+        flex-direction: column;
+    }
+
+
+    .aboutP1,
+    .aboutP2 {
+        width: 100%;
+    }
+
+    .aboutP1 {
+        text-align: center;
+    }
+
+    .aboutP1 img {
+        border-radius: 10px;
+    }
+
+    .aboutP2 {
+        padding: 10px;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+
+    .skillsDiv {
+        flex-direction: column;
+    }
+
+    .skillsList {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+
+    .skillsDiv .p1 {
+        width: 100%;
+        background: #f19fcfb9;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .skillsDiv .p2 {
+        width: 100%;
+        font-size: 23px;
+
+    }
+
+
+
+
+    .Project {
+        flex-direction: column;
+    }
+
+    .Project .p1 {
+        width: 100%;
+    }
+
+
+    .Project .p2 {
+        width: 100%;
+    }
+
+
+    .Contactbuttons {
+        flex-direction: column;
+    }
+
+    .contactDivOne {
+        width: 100%;
+
+    }
+
+    .contactDivTwo {
+        width: 100%;
+    }
+
+}
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Divyesh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#HeroSection">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMeSection">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skillsSection">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projectSection">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ContactSection">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="HeroSection">
+        <div class="heroSectionContent">
+            <div>
+                <img src="img1.jpeg" alt="" class="myImageCircle">
+            </div>
+            <p>
+                Hi, I'm
+                <br>
+                <span class="focus-text">Pakki Divyesh Kumar</span>
+            </p>
+            <p>
+                I'm a <span class="focus-text">Aspiring Data Analyst</span>
+            </p>
+            <div>
+                <button class="btn btn-sm heroButtons">Resume</button>
+                <button class="btn btn-sm heroButtons">Github</button>
+                <button class="btn btn-sm heroButtons">Linkedin</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutMeSection" class="mt-5">
+        <div class="aboutP1">
+            <img src="img1.jpeg" alt="" width="250px">
+        </div>
+        <div class="aboutP2">
+            <h1 class="heading">About Me</h1>
+            <p>
+                I am Pakki Divyesh Kumar, currently Pursing B.TECH third year of CSE(DS) branch in behara college of engineering and techonology.
+                 want to work as a  Data Analyst and become a successful professional in the field.   
+            </p>
+        </div>
+    </section>
+
+    <section id="skillsSection" class="mt-5">
+        <h1 class="heading m-auto">Skills</h1>
+        <div class="skillsDiv">
+            <div class="p1">
+                <p>Basic</p>
+            </div>
+            <div class="p2">
+                <ul class="skillsList">
+                    <li>HTML,</li>
+                    <li>css,</li>
+                    <li>power BI,</li>
+                    <li>Python,</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skillsDiv">
+            <div class="p1">
+                <p>Intermediate</p>
+            </div>
+            <div class="p2">
+                <ul class="skillsList">
+                    <li>HTML,</li>
+                    <li>css,</li>
+                    <li>power BI,</li>
+                    <li>Python,</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skillsDiv">
+            <div class="p1">
+                <p>Advanced</p>
+            </div>
+            <div class="p2">
+                <ul class="skillsList">
+                    <li>HTML,</li>
+                    <li>css,</li>
+                    <li>power BI,</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="projectSection" class="mt-5">
+        <h1 class="heading m-auto">Projects</h1>
+
+        <div class="Project">
+            <div class="p1">
+                <img src="project1.png" alt="" width="300px" class="projectImage">
+            </div>
+            <div class="p2">
+                <h3>Project study portal</h3>
+                <p>
+                    created a basic website page using HTML and CSS. 
+                    The website includes login page, download portal, study resources. 
+                    The website is simple and easy to use and access the website.
+
+
+                </p>
+                <div>
+                    <a href=""><button class="btn btn-sm gitHubButton">GitHub</button></a>
+                    <a href=""><button class="btn btn-sm demoButton">Demo</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="Project">
+
+            <div class="p2">
+               <img src="project2.jpg" alt="" width="300px" class="projectImage">
+            </div>
+                <h3>Project Crop Disease Identification App</h3>
+                <p>
+                    Developed a web application that uses machine learning algorithms to identify crop diseases based on images of the affected plants. 
+                    The app allows farmers to upload images of their crops and receive instant feedback on the health of their plants, along with recommendations for treatment and prevention.
+                </p>
+                <div>
+                   <a href=""><button class="btn btn-sm gitHubButton">GitHub</button></a>
+                   <a href=""><button class="btn btn-sm demoButton">Demo</button></a>
+                </div>
+            </div>
+
+            <div class="p1">
+                <img src="" alt="" width="300px" class="projectImage">
+            </div>
+        </div>
+
+
+        <div class="Project">
+            <div class="p1">
+                <img src="Best_Power_BI_Resources_Learning1.webp" alt="" width="300px" class="projectImage">
+            </div>
+            <div class="p2">
+                  
+                <h3>Project power BI dashboard</h3>
+                <p>
+                    Created a comprehensive power BI dashboard to visualize and analyze business data, providing actionable insights for decision-making.
+
+
+                </p>
+                <div>
+                   <a href=""><button class="btn btn-sm gitHubButton">GitHub</button></a>
+                   <a href=""><button class="btn btn-sm demoButton">Demo</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ContactSection" class="mt-5">
+        <h1 class="heading m-auto">Contact Me</h1>
+
+        <div class="Contactbuttons">
+            <div class="contactDivOne">
+                <div class="contactLogo">
+                    <img src="download.jpg" alt="" width="35px" height="35px">
+                </div>
+                <div class="contactContent">
+                    <p>Email</p>
+                    <p>pakkidivyeshkumar@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contactDivTwo">
+                <div class="contactLogo">
+                    <img src="image2.png" alt="" width="35px" height="35px">
+                </div>
+                <div class="contactContent">
+                    <p>Linkedin</p>
+                    <p>https://www.linkedin.com/in/divyesh-kumar-pakki-b493313a2</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <footer>
+        All rights Reserved!       
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+        
+</body>
+        <script>
+            alert("welcome to my portfolio");
+            let n=prompt("Enter your name");
+            alert("hello!"+n);
+            let result=confirm("Do You Want To Stay In This Page");
+            if(result){
+                alert("you click ok button");
+            }
+            else{
+                alert("you click cancel button");
+            }
+        </script>
+</html>
